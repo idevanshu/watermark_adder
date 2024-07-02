@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;800&display=swap");
+
+:root {
+  --dark: #292929;
+  --primary: #1b1a55;
+  --medium: #615efc;
+  --light: #7e8ef1;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  background-color: var(--dark);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 30px;
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  color: var(--medium);
+  cursor: pointer;
+}
+
+.drop-box {
+  height: 500px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  border: 2px dashed var(--medium);
+  border-radius: 15px;
+  color: var(--light);
+}
+
+.drop-box:hover {
+  cursor: pointer;
+}
+
+.big {
+  font-size: 300px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* box-sizing: border-box; */
+  flex-flow: row wrap;
+}
+
+.img {
+  width: auto;
+  height: 600px;
+  margin-right: 20px;
+}
+
+.img img {
+  height: inherit;
+  width: inherit;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.utils {
+  height: 600px;
+  width: 500px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  /* border: 3px solid var(--light); */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.watermark {
+  background-color: var(--light);
+  height: 100px;
+  border-radius: 10px;
+  width: 45%;
+  margin: 10px;
+}
+
+input {
+  width: calc(90% + 10px);
+  /* padding: 5px; */
+  border: none;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #fff;
+  color: var(--medium);
+  transition: 0.2s ease-in-out;
+  border-radius: 10px;
+}
+.btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--light);
+}
+
+.footer {
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  font-weight: 300;
+  width: 100%;
+  color: var(--light);
+}
